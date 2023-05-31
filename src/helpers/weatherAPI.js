@@ -21,7 +21,9 @@ export const getWeatherByCity = async (cityURL) => {
     icon: data.current.condition.icon,
     name: data.location.name,
     country: data.location.country,
+    url: cityURL,
   };
+
   return dataReturn;
 //   seu código aqui
 };
